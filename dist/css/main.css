@@ -1,5 +1,59 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, .main-container, .container {
   height: 100%;
   background-color: #271661;
+  color: #fff;
+  font-family: montserrat;
+  font-weight: 400;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div > .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.pages > ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 60%;
+}
+
+.pages {
+  width: 40%;
+  line-height: 80px;
+}
+
+.pages > ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
