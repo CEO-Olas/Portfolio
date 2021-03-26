@@ -6,7 +6,9 @@
   padding: 0;
 }
 
-body, .main-container, .container {
+body,
+.main-container,
+.container {
   height: 100%;
   background-color: #271661;
   color: #fff;
@@ -36,11 +38,32 @@ div > .container {
 }
 
 .logo {
-  width: 60%;
+  width: 55%;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5em;
+}
+
+.home .textArea {
+  width: 55%;
+}
+
+.home .homeImage {
+  width: 45%;
+}
+
+p {
+  font-size: 14px;
+  word-spacing: 2px;
+  line-height: 1.7em;
 }
 
 .pages {
-  width: 40%;
+  width: 45%;
   line-height: 80px;
 }
 
@@ -56,4 +79,256 @@ a {
 a:hover {
   text-transform: uppercase;
 }
+
+.textArea {
+  margin-top: 8em;
+}
+
+.textArea h1,
+.textArea h2,
+.textArea p,
+.textArea input {
+  padding: 5px 0px;
+}
+
+.textArea h1 {
+  font-weight: 600;
+}
+
+.textArea h3 {
+  color: #6f87ff;
+}
+
+.textArea p {
+  margin-top: 10px;
+}
+
+.textArea input {
+  margin: 15px 0px;
+  padding: 7px 10px;
+  font-size: 14px;
+  border: 1px solid white;
+  color: black;
+  cursor: pointer;
+}
+
+.textArea > input:hover {
+  border: 1px solid white;
+  background: none;
+  color: white;
+}
+
+.line {
+  font-weight: bolder;
+  margin-top: -5px;
+}
+
+.aboutArea {
+  margin-top: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutArea .aboutImage {
+  width: 55%;
+}
+
+.aboutArea .about {
+  width: 45%;
+}
+
+.about > .line {
+  margin: 10px 0;
+}
+
+.about > input {
+  margin: 15px 0px;
+  padding: 7px 10px;
+  font-size: 14px;
+  border: 1px solid white;
+  color: black;
+  cursor: pointer;
+}
+
+.about > input:hover {
+  border: 1px solid white;
+  background: none;
+  color: white;
+}
+
+.skill-background {
+  height: 500px;
+  margin-top: 10em;
+  background-color: #190850;
+  width: 100%;
+}
+
+.containerSkill {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 70px;
+}
+
+.containerSkill p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.containerSkill .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerSkill h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillBar {
+  margin: 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skillBar .bar-1,
+.skillBar .bar-2 {
+  width: 50%;
+}
+
+.skillBar .bar-1 .right,
+.skillBar .bar-2 .right {
+  float: right;
+  margin-right: 4em;
+  font-size: 16px;
+}
+
+.skillBar .bar-1 > .progress {
+  width: 400px;
+  height: 5px;
+  margin: 10px 0 40px 0;
+  background-color: #6f87ff;
+}
+
+.skillBar .bar-1 > .progress .htmlscore {
+  background-color: white;
+  width: 92%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skillBar .bar-1 > .progress .cssscore {
+  background-color: white;
+  width: 87%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skillBar .bar-1 > .progress .scssscore {
+  background-color: white;
+  width: 79%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skillBar .bar-2 > .progress {
+  width: 400px;
+  height: 5px;
+  margin: 10px 0 40px 0;
+  background-color: #6f87ff;
+}
+
+.skillBar .bar-2 > .progress .jsscore {
+  background-color: white;
+  width: 69%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skillBar .bar-2 > .progress .vuescore {
+  background-color: white;
+  width: 48%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skillBar .bar-2 > .progress .xdscore {
+  background-color: white;
+  width: 85%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .containerSkill>.skillBars {
+    margin-top: 3em;
+
+    h3 {
+        margin: 0;
+    }
+    .html,
+    .css,
+    .js,
+    .scss {
+        margin: 2empx 0px;
+    }
+} */
+/* 
+.containerSkill>.skillBars {
+    .Bar {
+        width: 400px;
+        height: 5px;
+        background-color: $primaryColor2;
+    }
+
+
+    .htmlScore {
+        background-color: white;
+        width: 92%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cssScore {
+        background-color: white;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .scssScore {
+        background-color: white;
+        width: 79%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .jsScore {
+        background-color: white;
+        width: 69%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    } 
+}*/
 /*# sourceMappingURL=main.css.map */
