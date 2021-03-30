@@ -12,6 +12,13 @@ body,
     font-weight: 400;
 }
 
+.skill-background {
+    height: 500px;
+    margin-top: 0em;
+    background-color: $primaryColor3;
+    width: 100% !important;
+}
+
 .navbar {
     display: flex;
 }
@@ -153,12 +160,7 @@ a:hover {
 
 }
 
-.skill-background {
-    height: 500px;
-    margin-top: 0em;
-    background-color: $primaryColor3;
-    width: 100%;
-}
+
 
 .containerSkill {
     width: 70%;
@@ -196,15 +198,19 @@ a:hover {
 
         .right {
             float: right;
-            margin-right: 4em;
+            margin-right: 20%;
             font-size: 16px;
         }
+    }
+
+    .bar-2 > h4, progress {
+        position: right;
     }
 }
 
 .skillBar {
     .bar-1>.progress {
-        width: 400px;
+        width: 80%;
         height: 5px;
         margin: 10px 0 40px 0;
         background-color: $primaryColor2;
@@ -235,7 +241,7 @@ a:hover {
     }
 
     .bar-2>.progress {
-        width: 400px;
+        width: 80%;
         height: 5px;
         margin: 10px 0 40px 0;
         background-color: $primaryColor2;
@@ -266,22 +272,25 @@ a:hover {
     }
 }
 
-.main-container> .container > .footer{
+.main-container>.container>.footer {
     margin-top: 4em;
-    
 
-    h2{
+
+    h2 {
         text-align: center;
     }
-    .line{
+
+    .line {
         text-align: center;
     }
-    .button{
+
+    .button {
         display: flex;
         justify-content: center;
         margin: 15px 0;
     }
-    input{
+
+    input {
         margin: 20px 0px;
         padding: 8px 17px;
         font-size: 16px;
@@ -291,22 +300,24 @@ a:hover {
         display: flex;
         justify-content: center;
 
-        &:hover{
+        &:hover {
             border: 1px solid white;
             background: none;
             color: white;
         }
     }
-    p{
+
+    p {
         text-align: center;
         margin-bottom: 15px;
     }
-    .icons{
+
+    .icons {
         display: flex;
         justify-content: center;
-        
 
-        div{
+
+        div {
             border: 1px solid rgb(121, 110, 110);
             background-color: rgb(121, 110, 110);
             padding: 6px;
@@ -315,14 +326,16 @@ a:hover {
             margin: 0 5px;
             width: auto;
             height: auto;
-            
+
         }
     }
-    .hrline{
+
+    .hrline {
         border-bottom: 1px solid white;
         margin-top: 4em;
     }
-    .copyright{
+
+    .copyright {
         margin: 2em 0 0 3em;
     }
 }

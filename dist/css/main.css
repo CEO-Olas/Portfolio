@@ -16,6 +16,13 @@ body,
   font-weight: 400;
 }
 
+.skill-background {
+  height: 500px;
+  margin-top: 0em;
+  background-color: #190850;
+  width: 100% !important;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,13 +171,6 @@ a:hover {
   color: white;
 }
 
-.skill-background {
-  height: 500px;
-  margin-top: 0em;
-  background-color: #190850;
-  width: 100%;
-}
-
 .containerSkill {
   width: 70%;
   margin: 0 auto;
@@ -219,12 +219,16 @@ a:hover {
 .skillBar .bar-1 .right,
 .skillBar .bar-2 .right {
   float: right;
-  margin-right: 4em;
+  margin-right: 20%;
   font-size: 16px;
 }
 
+.skillBar .bar-2 > h4, .skillBar progress {
+  position: right;
+}
+
 .skillBar .bar-1 > .progress {
-  width: 400px;
+  width: 80%;
   height: 5px;
   margin: 10px 0 40px 0;
   background-color: #6f87ff;
@@ -255,7 +259,7 @@ a:hover {
 }
 
 .skillBar .bar-2 > .progress {
-  width: 400px;
+  width: 80%;
   height: 5px;
   margin: 10px 0 40px 0;
   background-color: #6f87ff;
