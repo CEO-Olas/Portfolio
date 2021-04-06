@@ -121,10 +121,12 @@ a:hover {
   cursor: pointer;
 }
 
-.textArea > input:hover {
+.textArea input:hover {
   border: 1px solid white;
   background: none;
   color: white;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .line {
@@ -153,23 +155,25 @@ a:hover {
   margin-top: 4em;
 }
 
-.about > .line {
+.aboutArea .about .line {
   margin: 5px 0px 10px 0px;
 }
 
-.about > input {
+.aboutArea .about input {
   margin: 15px 0px;
-  padding: 7px 10px;
-  font-size: 14px;
+  padding: 7px 15px;
+  font-size: 16px;
   border: 1px solid white;
   color: black;
   cursor: pointer;
 }
 
-.about > input:hover {
+.aboutArea .about input:hover {
   border: 1px solid white;
   background: none;
   color: white;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .containerSkill {
@@ -224,8 +228,8 @@ a:hover {
   font-size: 16px;
 }
 
-.skillBar .bar-2 > h4, .skillBar progress {
-  position: right;
+.skillBar .bar-2 {
+  float: right;
 }
 
 .skillBar .bar-1 > .progress {
@@ -331,6 +335,8 @@ a:hover {
   border: 1px solid white;
   background: none;
   color: white;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .main-container > .container > #footer p {
@@ -348,14 +354,20 @@ a:hover {
 }
 
 .main-container > .container > #footer .icons div {
-  border: 1px solid #796e6e;
-  background-color: #796e6e;
+  border: none;
+  background-color: #190850;
   padding: 6px;
-  cursor: pointer;
   border-radius: 20%;
   margin: 0 5px;
   width: auto;
   height: auto;
+}
+
+.main-container > .container > #footer .icons div:hover {
+  background-color: #6f87ff;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .main-container > .container > #footer .hrline {

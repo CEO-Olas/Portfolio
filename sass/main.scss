@@ -108,14 +108,16 @@ a:hover {
         border: 1px solid white;
         color: black;
         cursor: pointer;
+
+        &:hover {
+            border: 1px solid white;
+            background: none;
+            color: white;
+            transition: all ease 0.5s;
+        }
     }
 }
 
-.textArea>input:hover {
-    border: 1px solid white;
-    background: none;
-    color: white;
-}
 
 .line {
     font-weight: bolder;
@@ -138,29 +140,27 @@ a:hover {
     .about {
         width: 45%;
         margin-top: 4em;
+        
+        .line {
+            margin: 5px 0px 10px 0px;
+        }
+        input {
+            margin: 15px 0px;
+            padding: 7px 15px;
+            font-size: 16px;
+            border: 1px solid white;
+            color: black;
+            cursor: pointer;
+        
+            &:hover {
+                border: 1px solid white;
+                background: none;
+                color: white;
+                transition: all ease 0.5s;
+            }
+        }
     }
 }
-
-.about>.line {
-    margin: 5px 0px 10px 0px;
-}
-
-.about>input {
-    margin: 15px 0px;
-    padding: 7px 10px;
-    font-size: 14px;
-    border: 1px solid white;
-    color: black;
-    cursor: pointer;
-}
-
-.about>input:hover {
-    border: 1px solid white;
-    background: none;
-    color: white;
-
-}
-
 
 
 .containerSkill {
@@ -204,8 +204,8 @@ a:hover {
         }
     }
 
-    .bar-2 > h4, progress {
-        position: right;
+    .bar-2 {
+        float: right;
     }
 }
 
@@ -305,6 +305,7 @@ a:hover {
             border: 1px solid white;
             background: none;
             color: white;
+            transition: all ease 0.5s;
         }
     }
 
@@ -319,15 +320,21 @@ a:hover {
 
 
         div {
-            border: 1px solid rgb(121, 110, 110);
-            background-color: rgb(121, 110, 110);
+            border: none;
+            background-color: $primaryColor3;
             padding: 6px;
-            cursor: pointer;
             border-radius: 20%;
             margin: 0 5px;
             width: auto;
             height: auto;
 
+
+            &:hover {
+                background-color: $primaryColor2;
+                cursor: pointer;
+                transition: all ease 0.5s;
+
+            }
         }
     }
 
