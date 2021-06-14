@@ -2,6 +2,27 @@
 @import './_colors';
 @import './reset';
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $primaryColor1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primaryColor2;
+}
+
 body,
 .main-container,
 .container {
@@ -140,10 +161,11 @@ a:hover {
     .about {
         width: 45%;
         margin-top: 4em;
-        
+
         .line {
             margin: 5px 0px 10px 0px;
         }
+
         input {
             margin: 15px 0px;
             padding: 7px 15px;
@@ -151,7 +173,7 @@ a:hover {
             border: 1px solid white;
             color: black;
             cursor: pointer;
-        
+
             &:hover {
                 border: 1px solid white;
                 background: none;
@@ -345,5 +367,23 @@ a:hover {
 
     .copyright {
         margin: 2em 0 0 3em;
+    }
+}
+
+.main-container>.container>.activeJobs {
+    margin-top: 4em;
+
+    .line {
+        margin-top: 1em;
+    }
+
+    .activeArea {
+        display: flex;
+        margin-top: 2em;
+
+        .activeboxes,
+        .activeText {
+            width: 50%;
+        }
     }
 }
