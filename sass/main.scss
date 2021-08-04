@@ -385,5 +385,18 @@ a:hover {
         .activeText {
             width: 50%;
         }
+
+        .activeboxes > .activeimg {
+            border: 1px solid $primaryColor2;
+            height: 100%;
+        }
+    }
+}
+
+.main-container> .container> .latestWork {
+    margin-top: 4em;
+
+    h2, .line{
+        text-align: center;
     }
 }
