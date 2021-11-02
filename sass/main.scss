@@ -23,6 +23,7 @@
     background: $primaryColor2;
 }
 
+
 body,
 .main-container,
 .container {
@@ -139,7 +140,6 @@ a:hover {
     }
 }
 
-
 .line {
     font-weight: bolder;
     margin-top: 10px 0px;
@@ -154,7 +154,8 @@ a:hover {
 
         img {
             position: relative;
-            margin: -5em 0 0 -4em;
+            margin: -5em 0 3em -4em;
+            width: 450px;
         }
     }
 
@@ -214,6 +215,7 @@ a:hover {
 .skillBar {
     margin: 2em 1em;
     display: flex;
+    justify-content: space-between;
 
     .bar-1,
     .bar-2 {
@@ -355,7 +357,7 @@ a:hover {
                 background-color: $primaryColor2;
                 cursor: pointer;
                 transition: all ease 0.5s;
-
+                transform: scale(1) translateY(-5px);
             }
         }
     }
@@ -372,31 +374,60 @@ a:hover {
 
 .main-container>.container>.activeJobs {
     margin-top: 4em;
+    width: 50%;
 
     .line {
         margin-top: 1em;
     }
 
     .activeArea {
-        display: flex;
         margin-top: 2em;
 
-        .activeboxes,
-        .activeText {
-            width: 50%;
+        input {
+            margin: 20px 0px;
+            padding: 8px 17px;
+            font-size: 16px;
+            border: 1px solid white;
+            color: black;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+                border: 1px solid white;
+                background: none;
+                color: white;
+                transition: all ease 0.5s;
+            }
         }
 
-        .activeboxes > .activeimg {
-            border: 1px solid $primaryColor2;
-            height: 100%;
-        }
     }
 }
 
-.main-container> .container> .latestWork {
+.main-container>.active {
+    display: flex;
+
+    .activeboxes, .aboutArea{
+        width: 50%;
+    }
+    .activeboxes>.activeimg {
+        margin-top: 4em;
+        border: 1px solid $primaryColor2;
+        height: 350px;
+
+        div {
+            border: 1px solid $primaryColor2;
+            height: 100px;
+        }
+    }
+
+}
+
+.main-container>.container>.latestWork {
     margin-top: 4em;
 
-    h2, .line{
+    h2,
+    .line {
         text-align: center;
     }
 }
